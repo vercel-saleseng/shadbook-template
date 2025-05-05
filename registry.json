@@ -1,0 +1,171 @@
+{
+	"$schema": "https://ui.shadcn.com/schema/registry.json",
+	"name": "shadbook-template",
+	"homepage": "",
+	"items": [
+		{
+			"$schema": "https://ui.shadcn.com/schema/registry-item.json",
+			"name": "starter-kit",
+			"type": "registry:theme",
+			"title": "Starter Kit",
+			"description": "A blank app with the your design system's theme preconfigured.",
+			"files": [
+				{
+					"path": "tailwind.config.ts",
+					"type": "registry:file",
+					"target": "tailwind.config.ts"
+				},
+				{
+					"path": "app/globals.css",
+					"type": "registry:file",
+					"target": "app/globals.css"
+				},
+				{
+					"path": "app/(your-design-system)/layout.tsx",
+					"type": "registry:file",
+					"target": "app/layout.tsx"
+				}
+			]
+		},
+				{
+			"$schema": "https://ui.shadcn.com/schema/registry-item.json",
+			"name": "dashboard",
+			"type": "registry:component",
+			"title": "Dashboard",
+			"description": "A complete dashboard implementation with sidebar, stats cards, charts, and tables.",
+			"registryDependencies": ["https://registry-demo-xi.vercel.app/r/start.json"],
+			"files": [
+				{
+					"path": "app/(your-design-system)/dashboard/page.tsx",
+					"type": "registry:file",
+					"target": "app/dashboard/page.tsx"
+				},
+				{
+					"path": "components/dashboard/app-sidebar.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/app-sidebar.tsx"
+				},
+				{
+					"path": "components/dashboard/branch-switcher.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/branch-switcher.tsx"
+				},
+				{
+					"path": "components/dashboard/chart-section.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/chart-section.tsx"
+				},
+				{
+					"path": "components/dashboard/department-table.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/department-table.tsx"
+				},
+				{
+					"path": "components/dashboard/header.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/header.tsx"
+				},
+				{
+					"path": "components/dashboard/recent-activity.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/recent-activity.tsx"
+				},
+				{
+					"path": "components/dashboard/search-form.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/search-form.tsx"
+				},
+				{
+					"path": "components/dashboard/stats-cards.tsx",
+					"type": "registry:file",
+					"target": "components/dashboard/stats-cards.tsx"
+				}
+			]
+		},
+		{
+			"$schema": "https://ui.shadcn.com/schema/registry-item.json",
+			"name": "terminal",
+			"type": "registry:component",
+			"title": "Terminal",
+			"description": "An interactive terminal interface with number grid, progress tracking, and file selection.",
+			"registryDependencies": ["https://registry-demo-xi.vercel.app/r/start.json"],
+			"files": [
+				{
+					"path": "app/(your-design-system)/terminal/page.tsx",
+					"type": "registry:file",
+					"target": "app/terminal/page.tsx"
+				},
+				{
+					"path": "components/terminal/header.tsx",
+					"type": "registry:file",
+					"target": "components/terminal/header.tsx"
+				},
+				{
+					"path": "components/terminal/footer.tsx",
+					"type": "registry:file",
+					"target": "components/terminal/footer.tsx"
+				},
+				{
+					"path": "components/terminal/number-grid.tsx",
+					"type": "registry:file",
+					"target": "components/terminal/number-grid.tsx"
+				},
+				{
+					"path": "components/terminal/section-container.tsx",
+					"type": "registry:file",
+					"target": "components/terminal/section-container.tsx"
+				}
+			]
+		},
+		{
+			"$schema": "https://ui.shadcn.com/schema/registry-item.json",
+			"name": "couch-surfer",
+			"type": "registry:component",
+			"title": "Couch Surfer",
+			"description": "A fullstack TV show discovery app with show details, search functionality, and popular shows listing.",
+			"registryDependencies": ["https://registry-demo-xi.vercel.app/r/start.json"],
+			"files": [
+				{
+					"path": "app/(lumon)/couch-surfer/page.tsx",
+					"type": "registry:file",
+					"target": "app/couch-surfer/page.tsx"
+				},
+				{
+					"path": "app/(lumon)/couch-surfer/search/page.tsx",
+					"type": "registry:file",
+					"target": "app/couch-surfer/search/page.tsx"
+				},
+				{
+					"path": "app/(lumon)/couch-surfer/show/[id]/page.tsx",
+					"type": "registry:file",
+					"target": "app/couch-surfer/show/[id]/page.tsx"
+				},
+				{
+					"path": "app/(lumon)/couch-surfer/show/[id]/loading.tsx",
+					"type": "registry:file",
+					"target": "app/couch-surfer/show/[id]/loading.tsx"
+				},
+				{
+					"path": "components/couch-surfer/popular-shows.tsx",
+					"type": "registry:file",
+					"target": "components/couch-surfer/popular-shows.tsx"
+				},
+				{
+					"path": "components/couch-surfer/search-bar.tsx",
+					"type": "registry:file",
+					"target": "components/couch-surfer/search-bar.tsx"
+				},
+				{
+					"path": "components/couch-surfer/search-results.tsx",
+					"type": "registry:file",
+					"target": "components/couch-surfer/search-results.tsx"
+				},
+				{
+					"path": "components/couch-surfer/show-details.tsx",
+					"type": "registry:file",
+					"target": "components/couch-surfer/show-details.tsx"
+				}
+			]
+		}
+	]
+}
