@@ -9,25 +9,25 @@
   ],
   "files": [
     {
-      "path": "app/(lumon)/couch-surfer/page.tsx",
+      "path": "app/(your-design-system)/couch-surfer/page.tsx",
       "content": "import { Suspense } from \"react\";\nimport { ShowDetails } from \"@/components/couch-surfer/show-details\";\nimport { PopularShows } from \"@/components/couch-surfer/popular-shows\";\nimport { SearchBar } from \"@/components/couch-surfer/search-bar\";\n\nexport default function Home() {\n  return (\n    <>\n      <header className=\"border-b border-border py-4\">\n        <div className=\"container flex flex-col sm:flex-row items-center justify-between gap-4\">\n          <a\n            href=\"/couch-surfer\"\n            className=\"tex/couch-surfer/showfont-bold text-primary\"\n          >\n            Couch Surfer\n          </a>\n          <Suspense>\n            <SearchBar />\n          </Suspense>\n        </div>\n      </header>\n\n      <div className=\"min-h-screen py-8\">\n        <header className=\"mb-12 text-center\">\n          <h1 className=\"text-4xl font-bold mb-2\">Featured TV Show</h1>\n        </header>\n\n        <ShowDetails showId=\"20177\" />\n\n        <div className=\"mt-16\">\n          <h2 className=\"text-2xl font-bold mb-6 border-l-4 border-primary pl-4\">\n            Popular Shows You Might Like\n          </h2>\n          <PopularShows />\n        </div>\n      </div>\n    </>\n  );\n}\n",
       "type": "registry:file",
       "target": "app/couch-surfer/page.tsx"
     },
     {
-      "path": "app/(lumon)/couch-surfer/search/page.tsx",
+      "path": "app/(your-design-system)/couch-surfer/search/page.tsx",
       "content": "import { Suspense } from \"react\";\nimport { SearchResults } from \"@/components/couch-surfer/search-results\";\nimport Link from \"next/link\";\nimport { ArrowLeft } from \"lucide-react\";\nimport { SearchBar } from \"@/components/couch-surfer/search-bar\";\n\nexport default function SearchPage({\n  searchParams,\n}: {\n  searchParams: { q: string };\n}) {\n  const query = searchParams.q || \"\";\n\n  return (\n    <>\n      <header className=\"border-b border-border py-4\">\n        <div className=\"container flex flex-col sm:flex-row items-center justify-between gap-4\">\n          <a href=\"/couch-surfer\" className=\"text-xl font-bold text-primary\">\n            Couch Surfer\n          </a>\n          <Suspense>\n            <SearchBar />\n          </Suspense>\n        </div>\n      </header>\n\n      <div className=\"min-h-screen py-8\">\n        <header className=\"mb-8 max-w-6xl mx-auto px-4\">\n          <Link\n            href=\"/couch-surfer\"\n            className=\"inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-4\"\n          >\n            <ArrowLeft className=\"w-4 h-4\" />\n            Back to Home\n          </Link>\n          <h1 className=\"text-3xl font-bold\">Search Results for \"{query}\"</h1>\n        </header>\n\n        <div className=\"max-w-6xl mx-auto px-4\">\n          <SearchResults query={query} />\n        </div>\n      </div>\n    </>\n  );\n}\n",
       "type": "registry:file",
       "target": "app/couch-surfer/search/page.tsx"
     },
     {
-      "path": "app/(lumon)/couch-surfer/show/[id]/page.tsx",
+      "path": "app/(your-design-system)/couch-surfer/show/[id]/page.tsx",
       "content": "import { Suspense } from \"react\";\nimport { ShowDetails } from \"@/components/couch-surfer/show-details\";\nimport { PopularShows } from \"@/components/couch-surfer/popular-shows\";\nimport Link from \"next/link\";\nimport { ArrowLeft } from \"lucide-react\";\nimport { SearchBar } from \"@/components/couch-surfer/search-bar\";\n\nexport default function ShowPage({ params }: { params: { id: string } }) {\n  return (\n    <>\n      <header className=\"border-b border-border py-4\">\n        <div className=\"container flex flex-col sm:flex-row items-center justify-between gap-4\">\n          <a href=\"/couch-surfer\" className=\"text-xl font-bold text-primary\">\n            Couch Surfer\n          </a>\n          <Suspense>\n            <SearchBar />\n          </Suspense>\n        </div>\n      </header>\n\n      <div className=\"min-h-screen py-8\">\n        <header className=\"mb-8 max-w-6xl mx-auto px-4\">\n          <Link\n            href=\"/couch-surfer\"\n            className=\"inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-4\"\n          >\n            <ArrowLeft className=\"w-4 h-4\" />\n            Back to Home\n          </Link>\n        </header>\n\n        <ShowDetails showId={params.id} />\n\n        <div className=\"mt-16 max-w-6xl mx-auto px-4\">\n          <h2 className=\"text-2xl font-bold mb-6 border-l-4 border-primary pl-4\">\n            Popular Shows You Might Like\n          </h2>\n          <PopularShows />\n        </div>\n      </div>\n    </>\n  );\n}\n",
       "type": "registry:file",
       "target": "app/couch-surfer/show/[id]/page.tsx"
     },
     {
-      "path": "app/(lumon)/couch-surfer/show/[id]/loading.tsx",
+      "path": "app/(your-design-system)/couch-surfer/show/[id]/loading.tsx",
       "content": "export default function Loading() {\n  return null\n}\n",
       "type": "registry:file",
       "target": "app/couch-surfer/show/[id]/loading.tsx"

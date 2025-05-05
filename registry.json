@@ -126,22 +126,22 @@
 			"registryDependencies": ["https://registry-demo-xi.vercel.app/r/start.json"],
 			"files": [
 				{
-					"path": "app/(lumon)/couch-surfer/page.tsx",
+					"path": "app/(your-design-system)/couch-surfer/page.tsx",
 					"type": "registry:file",
 					"target": "app/couch-surfer/page.tsx"
 				},
 				{
-					"path": "app/(lumon)/couch-surfer/search/page.tsx",
+					"path": "app/(your-design-system)/couch-surfer/search/page.tsx",
 					"type": "registry:file",
 					"target": "app/couch-surfer/search/page.tsx"
 				},
 				{
-					"path": "app/(lumon)/couch-surfer/show/[id]/page.tsx",
+					"path": "app/(your-design-system)/couch-surfer/show/[id]/page.tsx",
 					"type": "registry:file",
 					"target": "app/couch-surfer/show/[id]/page.tsx"
 				},
 				{
-					"path": "app/(lumon)/couch-surfer/show/[id]/loading.tsx",
+					"path": "app/(your-design-system)/couch-surfer/show/[id]/loading.tsx",
 					"type": "registry:file",
 					"target": "app/couch-surfer/show/[id]/loading.tsx"
 				},

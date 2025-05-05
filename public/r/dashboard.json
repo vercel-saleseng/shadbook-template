@@ -9,7 +9,7 @@
   ],
   "files": [
     {
-      "path": "app/(lumon)/dashboard/page.tsx",
+      "path": "app/(your-design-system)/dashboard/page.tsx",
       "content": "import { AppSidebar } from \"@/components/dashboard/app-sidebar\";\nimport { ChartSection } from \"@/components/dashboard/chart-section\";\nimport { DepartmentTable } from \"@/components/dashboard/department-table\";\nimport { DashboardHeader } from \"@/components/dashboard/header\";\nimport { RecentActivity } from \"@/components/dashboard/recent-activity\";\nimport { StatsCards } from \"@/components/dashboard/stats-cards\";\nimport { SidebarInset, SidebarProvider } from \"@/components/ui/sidebar\";\n\nexport default function Page() {\n  return (\n    <SidebarProvider>\n      <AppSidebar />\n      <SidebarInset>\n        <DashboardHeader />\n        <div className=\"flex flex-1 flex-col gap-6 p-4 md:gap-8\">\n          <StatsCards />\n          {/* Chart and Recent Activity */}\n          <div className=\"grid gap-6 md:grid-cols-7\">\n            <ChartSection />\n            <RecentActivity />\n          </div>\n          <DepartmentTable />\n        </div>\n      </SidebarInset>\n    </SidebarProvider>\n  );\n}\n",
       "type": "registry:file",
       "target": "app/dashboard/page.tsx"
