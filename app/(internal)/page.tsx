@@ -43,7 +43,7 @@ export default async function Home() {
                 key={item.name}
                 title={item.title}
                 description={item.description}
-                previewUrl={domain + "/" + item.name}
+                previewUrl={"/" + item.name}
                 url={domain + "/r/" + item.name + ".json"}
               ></RegistryItemCard>
             ))}
